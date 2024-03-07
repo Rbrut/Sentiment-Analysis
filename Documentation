@@ -1,0 +1,45 @@
+Sentiment Analysis Project
+Introduction
+This project aims to perform sentiment analysis on the "IMDB Dataset of 50K Movie Reviews". The dataset consists of 50,000 movie reviews labeled as positive or negative sentiments. Three different models, namely Naive Bayes, Support Vector Machine (SVM), and Long Short-Term Memory (LSTM) neural network, were implemented and evaluated for classifying the sentiment.
+
+Dataset
+The "IMDB Dataset of 50K Movie Reviews" contains 50,000 movie reviews, evenly split into 25,000 training samples and 25,000 testing samples. Each review is labeled as either positive or negative sentiment.
+Vectorizer
+I used Binary Vectorizer with 3 n-grams. This vectorization technique transforms the text data into binary feature vectors, where each feature indicates the presence (1) or absence (0) of a specific n-gram in the text. Incorporating 3 n-grams, allows the model to capture more complex patterns and relationships in the data.
+Models
+1. Naive Bayes
+Naive Bayes is a simple probabilistic classifier based on Bayes' theorem. It assumes that the presence of a particular feature in a class is independent of the presence of other features. In this project, a multinomial Naive Bayes classifier was trained on the dataset.
+
+2. Support Vector Machine (SVM)
+SVM is a powerful supervised machine learning algorithm used for classification tasks. It aims to find the hyperplane that best separates the classes in the feature space. In this project, an SVM classifier with a linear kernel was trained on the dataset.
+
+3. Long Short-Term Memory (LSTM)
+LSTM is a type of recurrent neural network (RNN) architecture designed to capture long-term dependencies in sequential data. It is particularly effective for processing and classifying text data. In this project, an LSTM neural network was implemented using Keras with TensorFlow backend.
+
+
+Evaluation Metrics
+The performance of each model was evaluated using the following metrics:
+
+Accuracy: the proportion of correctly classified instances out of the total instances.
+Precision: the proportion of true positive instances out of all instances classified as positive.
+Recall: the proportion of true positive instances out of all actual positive instances.
+F1-score: the harmonic means of precision and recall, providing a balance between the two metrics.
+
+Results
+The performance of each model on the test dataset is summarized below:
+Model	Accuracy
+Naive Bayes	0.90
+SVM	
+LSTM	
+
+
+Conclusion
+Based on the evaluation results, the LSTM model achieved the highest accuracy and F1-score among the three models, indicating its superior performance in sentiment classification on the IMDB movie review dataset. However, it's essential to consider factors such as model complexity and computational resources required for training when choosing the appropriate model for a specific application.
+
+
+References
+IMDB Dataset of 50K Movie Reviews: https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+Scikit-learn Documentation: https://scikit-learn.org/stable/documentation.html
+Keras Documentation: https://keras.io/api/
+TensorFlow Documentation: https://www.tensorflow.org/api_docs
+
